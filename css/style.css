@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+/* common class */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/img/hero.jpg") no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.menu ion-icon {
+    font-size: 40px;
+    border: 1px solid #fff;
+    padding: 0;
+}
+
+/* hero */
+.hero {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1200px;
+
+}
+
+.hero h1 {
+    font-size: 70px;
+    display: inline-block;
+    color: #ffff;
+
+}
+
+.hero h1::before {
+    content: "";
+    border: 1px solid #fff;
+    display: block;
+}
+
+.hero h1::after {
+    content: "";
+    border: 1px solid #fff;
+    display: block;
+}
+
+.hero p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* arrow */
+.down-arrow {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 1200px;
+
+}
+
+.arrow {
+    position: relative;
+    color: #fff;
+    font-size: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: arrow 3s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        top: 10px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/* filp card Design */
+.filp-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.flip-card-img img {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    width: 400px;
+}
+
+.flip_card_title h3 {
+    font-weight: bold;
+}
+
+.flip_card_discription {
+    margin: 20px 0;
+}
+
+.flip_card_button button {
+    border: 1px solid #FF2B4A;
+    background-color: #FF2B4A;
+    color: #fff;
+    padding: 20px 70px;
+    font-size: 18px;
+}
+
+/* working section */
+.workin_container {
+    background-color: #F6F6F6;
+    padding: 100px 0;
+}
+
+.working {
+    text-align: center;
+
+}
+
+.working_title {
+    margin-bottom: 50px;
+}
+
+.working_title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.working_title p {
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.working_icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.working_icon_box {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 24px;
+
+}
+
+.working_icon_box:nth-child(1) {
+    background-color: #10C6FC;
+
+}
+
+.working_icon_box:nth-child(2) {
+    background-color: #835AEB;
+}
+
+.working_icon_box:nth-child(3) {
+    background-color: #002453;
+}
+
+.working_icon_box:nth-child(4) {
+    background-color: #FF2B4A;
+}
+
+/* EXPERIENCE */
+.experince {
+    background: url("/img/experience.jpg") no-repeat center/cover;
+    padding: 150px 0;
+    background-attachment: fixed;
+
+}
+
+.work-experince {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fff;
+}
+
+.mak_design {
+    background-color: #000000;
+    opacity: 0.9;
+    padding: 50px 20px;
+}
+
+.mad_title {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.mad_description h4 {
+    margin-bottom: 10px;
+}
+
+.mak_design hr {
+    border: 1px solid #fff;
+    margin: 30px 0;
+}
+
+/* mixltup */
+.mix_up {
+    padding: 100px 0;
+}
+.fillter_container{
+    text-align: center;
+    margin-bottom:40px;
+}
+.fillter_container h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.fillter_container p{
+    
+    margin-bottom: 20px;
+}
+.mix_up_butons button{
+border: none;
+color: #fff;
+background-color: #FF2B4A;
+padding: 10px 20px;
+font-size: 16px;
+
+}
+.mix_up_butons button.mixitup-control-active{
+    background-color: #000000;
+}
+.mix_query {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.mix_iteam {
+    height: 200px;
+}
+
+.mix_iteam img {
+    width: 100%;
+  height: 100%;
+}
+
+.mix_iteam:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.uk-lightbox{
+    background-color: #0000000a;
+}
+/* quatin section */
+.testimonial{
+    background:  url("/img/testimonial.jpg") no-repeat center top/cover;
+    margin: 10rem 0;
+    padding: 7rem;
+}
+.qutation{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.qutation i{
+    font-size: 4rem;
+}
+.qutation_description{
+    margin: 4rem 0;
+    color: #000000;
+}
+.qutation h4{
+    margin:1rem 0 ;
+    font-weight: bold;
+}
+.qutation span{
+    margin:1rem 0 ;
+    color: #000000;
+}
